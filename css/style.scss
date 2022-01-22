@@ -1,0 +1,190 @@
+// fonts
+@import url(fontawesome.css);
+@import url(brands.css);
+@import url(solid.css);
+
+
+// widths & heights
+body {
+  max-width: 1600px;
+}
+.topbar, .navbar ul, .gallery, .overlay {
+  width: 100%;
+}
+.logo img {
+  width: 100px;
+  height: 30px;
+}
+.recipe {
+  max-width: 640px;
+}
+.card img {
+  height: 100%;
+  flex-basis: 400px;
+}
+
+// Media Queries
+@media screen and (max-width:1200px) {
+  .card img {
+    flex-basis: 20%;
+  }
+}
+@media screen and (max-width:1000px) {
+  .card img {
+    flex-basis: 30%;
+  }
+}
+@media screen and (max-width:800px) {
+  .card img {
+    flex-basis: 40%;
+  }
+}
+@media screen and (max-width:600px) {
+  .card img {
+    flex-basis: 50%;
+  }
+}
+@media screen and (max-width:400px) {
+  .card img {
+    flex-basis: 90%;
+  }
+}
+
+
+// spacing
+body, header, nav, main, footer, div, ol, ul, li, p, img, form, input {
+  margin: 0;
+  padding: 0;
+}
+.gallery {
+  gap: 2vh;
+  padding: 3vh;
+}
+.social, .fa-sm {
+  padding: 5px;
+}
+header li, header form, footer, main  {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.logo img, header form, footer li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.logo img, input, .source {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.recipe li {
+  margin-left: 20px;
+  padding-left: 5px;
+}
+
+
+// colors
+
+footer {
+  background-color: black;
+}
+header a {
+  color: black;
+}
+footer, footer a, .copyright {
+  color: white}
+
+// text styles
+a {
+  text-decoration: none;
+}
+#featured {
+  font-weight: bold;
+}
+.recipe li {
+  font-size: 1.1em;
+  line-height: 1.25;
+}
+
+
+// Flexbox containers
+.topbar, .navbar, .navbar ul, .gallery {
+  display: flex;
+}
+.gallery {
+  flex-wrap: wrap;
+}
+.topbar {
+  justify-content: space-between;
+}
+.navbar ul, footer {
+  justify-content: space-evenly;
+}
+
+// Center
+.gallery, footer .navbar ul {
+  justify-content: center;
+}
+footer, .navbar, main, form {
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+footer, .copyright, .social, p, h1, h2, .source {
+  text-align: center
+}
+
+
+// Search bar
+
+input {
+  width: 50px;
+  margin-right: 5px;
+  border: 0;
+}
+
+// Navbar
+.navbar ul {
+  list-style-type: none;
+}
+
+// Recipe cards
+
+.card {
+  position: relative;
+  height: 188px;
+  flex-basis: 215px;
+}
+.card img {
+  object-fit: cover;
+  object-position: center;
+}
+
+// Text overlays
+.overlay {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background-color: black;
+  opacity: 60%;
+}
+.overlay p {
+  padding: 5px 0;
+  opacity: 2;
+}
+
+// borders
+
+.card {
+  border: 1px solid;
+}
+.card  {
+  border-color: lightgray;
+}
+header .navbar {
+  border: 0;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: lightgray
+}
+

@@ -1,0 +1,218 @@
+@import url(fontawesome.css);
+@import url(brands.css);
+@import url(solid.css);
+body {
+  max-width: 1600px;
+}
+
+.topbar, .navbar ul, .gallery, .overlay {
+  width: 100%;
+}
+
+.logo img {
+  width: 100px;
+  height: 30px;
+}
+
+.recipe {
+  max-width: 640px;
+}
+
+.card img {
+  height: 100%;
+  -ms-flex-preferred-size: 400px;
+      flex-basis: 400px;
+}
+
+@media screen and (max-width: 1200px) {
+  .card img {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .card img {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .card img {
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card img {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .card img {
+    -ms-flex-preferred-size: 90%;
+        flex-basis: 90%;
+  }
+}
+
+body, header, nav, main, footer, div, ol, ul, li, p, img, form, input {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  gap: 2vh;
+  padding: 3vh;
+}
+
+.social, .fa-sm {
+  padding: 5px;
+}
+
+header li, header form, footer, main {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.logo img, header form, footer li {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.logo img, input, .source {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.recipe li {
+  margin-left: 20px;
+  padding-left: 5px;
+}
+
+footer {
+  background-color: black;
+}
+
+header a {
+  color: black;
+}
+
+footer, footer a, .copyright {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+#featured {
+  font-weight: bold;
+}
+
+.recipe li {
+  font-size: 1.1em;
+  line-height: 1.25;
+}
+
+.topbar, .navbar, .navbar ul, .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.topbar {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar ul, footer {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.gallery, footer .navbar ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer, .navbar, main, form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+footer, .copyright, .social, p, h1, h2, .source {
+  text-align: center;
+}
+
+input {
+  width: 50px;
+  margin-right: 5px;
+  border: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  height: 188px;
+  -ms-flex-preferred-size: 215px;
+      flex-basis: 215px;
+}
+
+.card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  color: white;
+  background-color: black;
+  opacity: 60%;
+}
+
+.overlay p {
+  padding: 5px 0;
+  opacity: 2;
+}
+
+.card {
+  border: 1px solid;
+}
+
+.card {
+  border-color: lightgray;
+}
+
+header .navbar {
+  border: 0;
+  border-top: 1px;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: lightgray;
+}
+/*# sourceMappingURL=style.css.map */
