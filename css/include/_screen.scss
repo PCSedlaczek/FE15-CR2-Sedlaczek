@@ -1,0 +1,24 @@
+// Media Queries
+@media screen and (max-width: 768px) {
+  header .navbar {
+    font-size: 1rem;
+  }
+  .flex {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (min-width: 769px) {
+  header .navbar {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .navbar {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  header .navbar {
+    font-size: 1.3rem;
+  }
+}

@@ -1,116 +1,28 @@
-@import url(fontawesome.css);
-@import url(brands.css);
-@import url(solid.css);
+@import url("../webfonts/fontawesome.css");
+@import url("../webfonts/brands.css");
+@import url("../webfonts/solid.css");
+@import url("https://fonts.googleapis.com/css2?display=swap&family=Great+Vibes");
+@import url("https://fonts.googleapis.com/css2?display=swap&family=Simonetta");
+@import url("https://fonts.googleapis.com/css2?display=swap&family=Metal");
 body {
-  max-width: 1600px;
+  font-family: "Metal";
+  font-size: 1.1rem;
 }
 
-.topbar, .navbar ul, .gallery, .overlay {
-  width: 100%;
+header, footer, h1, h2, h3, h4, .overlay {
+  font-family: "Simonetta";
 }
 
-.logo img {
-  width: 100px;
-  height: 30px;
+.logo {
+  font-family: "Great Vibes";
 }
 
-.recipe {
-  max-width: 640px;
+.logo {
+  font-size: 1.75rem;
 }
 
-.card img {
-  height: 100%;
-  -ms-flex-preferred-size: 400px;
-      flex-basis: 400px;
-}
-
-@media screen and (max-width: 1200px) {
-  .card img {
-    -ms-flex-preferred-size: 20%;
-        flex-basis: 20%;
-  }
-}
-
-@media screen and (max-width: 1000px) {
-  .card img {
-    -ms-flex-preferred-size: 30%;
-        flex-basis: 30%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .card img {
-    -ms-flex-preferred-size: 40%;
-        flex-basis: 40%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .card img {
-    -ms-flex-preferred-size: 50%;
-        flex-basis: 50%;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .card img {
-    -ms-flex-preferred-size: 90%;
-        flex-basis: 90%;
-  }
-}
-
-body, header, nav, main, footer, div, ol, ul, li, p, img, form, input {
-  margin: 0;
-  padding: 0;
-}
-
-.gallery {
-  gap: 2vh;
-  padding: 3vh;
-}
-
-.social, .fa-sm {
-  padding: 5px;
-}
-
-header li, header form, footer, main {
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.logo img, header form, footer li {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.logo img, input, .source {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.recipe li {
-  margin-left: 20px;
-  padding-left: 5px;
-}
-
-footer {
-  background-color: black;
-}
-
-header a {
-  color: black;
-}
-
-footer, footer a, .copyright {
-  color: white;
-}
-
-a {
-  text-decoration: none;
-}
-
-#featured {
-  font-weight: bold;
+h1 {
+  font-size: 2rem;
 }
 
 .recipe li {
@@ -118,86 +30,36 @@ a {
   line-height: 1.25;
 }
 
-.topbar, .navbar, .navbar ul, .gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+header .navbar, footer {
+  font-size: 1rem;
 }
 
-.gallery {
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.text p {
+  line-height: 1.25;
 }
 
-.topbar {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+a {
+  text-decoration: none;
 }
 
-.navbar ul, footer {
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+.logo, .featured, .category, input {
+  font-weight: bold;
 }
 
-.gallery, footer .navbar ul {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+footer, .overlay {
+  background-color: black;
 }
 
-footer, .navbar, main, form {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 auto;
+header a {
+  color: black;
 }
 
-footer, .copyright, .social, p, h1, h2, .source {
-  text-align: center;
+footer, footer a, .copyright, .overlay {
+  color: white;
 }
 
 input {
-  width: 50px;
-  margin-right: 5px;
   border: 0;
-}
-
-.navbar ul {
-  list-style-type: none;
-}
-
-.card {
-  position: relative;
-  height: 188px;
-  -ms-flex-preferred-size: 215px;
-      flex-basis: 215px;
-}
-
-.card img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-}
-
-.overlay {
-  position: absolute;
-  bottom: 0;
-  color: white;
-  background-color: black;
-  opacity: 60%;
-}
-
-.overlay p {
-  padding: 5px 0;
-  opacity: 2;
 }
 
 .card {
@@ -214,5 +76,213 @@ header .navbar {
   border-bottom: 1px;
   border-style: solid;
   border-color: lightgray;
+}
+
+@media screen and (max-width: 768px) {
+  header .navbar {
+    font-size: 1rem;
+  }
+  .flex {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  header .navbar {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header .navbar {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header .navbar {
+    font-size: 1.3rem;
+  }
+}
+
+body, header, nav, main, footer, div, ol, ul, li, p, h1, h2, h3, h4, img, form, input {
+  margin: 0;
+  padding: 0;
+}
+
+.gallery {
+  gap: 3vh;
+}
+
+.navbar, .logo, .fa-sm {
+  padding: 5px;
+}
+
+.logo, header form, .overlay, .overlay p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+footer, header .navbar, .source, h1 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+main, h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+h3, h4, .social {
+  padding-bottom: 5px;
+}
+
+.text p {
+  padding-bottom: 10px;
+}
+
+h1, .title {
+  padding-bottom: 15px;
+}
+
+h3, h4 {
+  padding-top: 15px;
+}
+
+.recipe ul li {
+  margin-left: 30px;
+  padding: 0;
+}
+
+.recipe ol li {
+  margin-left: 20px;
+  padding-left: 7px;
+}
+
+.pic {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+body {
+  width: 100%;
+  max-width: 1600px;
+}
+
+.topbar, .navbar ul, .gallery, .overlay {
+  width: 100%;
+}
+
+.gallery {
+  width: 100%;
+}
+
+.recipe, .text {
+  width: 90%;
+  max-width: 640px;
+}
+
+.card {
+  height: 200px;
+  -ms-flex-preferred-size: 300px;
+      flex-basis: 300px;
+}
+
+.pic {
+  height: 360px;
+}
+
+.card img, .pic img, .text img {
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  width: 80px;
+  height: 30px;
+}
+
+.column {
+  width: 45%;
+  min-width: 290px;
+}
+
+main {
+  min-height: 71vh;
+}
+
+.topbar, .navbar, .navbar ul, .gallery, .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery, header .navbar ul {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.topbar {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar ul, footer {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navbar ul, .flex {
+  gap: 2.25vw;
+}
+
+.gallery, footer .navbar ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body, footer, .navbar, main, form {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+input, footer, .copyright, .social, footer p, h1, h2, .source, .overlay {
+  text-align: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+}
+
+.recipe ul {
+  list-style-type: circle;
+}
+
+.card, .pic {
+  position: relative;
+}
+
+.card img, .pic img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  opacity: 60%;
 }
 /*# sourceMappingURL=style.css.map */
