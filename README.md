@@ -30,6 +30,6 @@
 - [x] Check website design against template image guide
 - [x] Test page responsiveness on desktop, tablet and mobile
 - [x] Format documents in VSC
-- [*] Push files to GitHub repository
+- [x] Push files to GitHub repository
 - [ ] Invite codefactorygit as collaborator
 - [x] Send repository link through LMS
