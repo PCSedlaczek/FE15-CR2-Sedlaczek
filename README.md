@@ -31,5 +31,5 @@
 - [x] Test page responsiveness on desktop, tablet and mobile
 - [x] Format documents in VSC
 - [x] Push files to GitHub repository
-- [ ] Invite codefactorygit as collaborator
 - [x] Send repository link through LMS
+- [ ] Invite codefactorygit as collaborator
