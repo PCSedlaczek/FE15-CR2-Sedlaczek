@@ -1,20 +1,30 @@
 // Media Queries
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   header .navbar {
     font-size: 1rem;
   }
   .flex {
     flex-wrap: wrap;
   }
+  .card {
+    flex-basis: 80%;
+  }
 }
-@media screen and (min-width: 769px) {
+
+@media screen and (min-width: 768px) {
   header .navbar {
     font-size: 1.1rem;
+  }
+  .card {
+    flex-basis: 45%;
   }
 }
 @media screen and (min-width: 1024px) {
   header .navbar {
     font-size: 1.2rem;
+  }
+  .card {
+    flex-basis: 30%;
   }
 }
 @media screen and (min-width: 1440px) {

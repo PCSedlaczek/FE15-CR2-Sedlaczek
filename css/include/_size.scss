@@ -8,6 +8,7 @@ body {
 }
 .gallery {
   width: 100%;
+  max-width: 1000px;
 }
 .recipe, .text {
   width: 90%;
@@ -15,7 +16,6 @@ body {
 }
 .card {
   height: 200px;
-  flex-basis: 300px;
 }
 .pic {
   height: 360px;
