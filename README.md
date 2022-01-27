@@ -7,6 +7,7 @@
 - [x] Research most popular tablet breakpoint (768px)
 - [x] Link FontAwesome CSS for Search & Social Media Buttons
 - [x] Research Google Webfont for Food Blog logo (Great Vibes)
+- [x] Choose Google Webfont for Navbar & Card titles (Simonetta)
 - [x] Choose Google Webfont for Recipe content (Metal)
 
 ## Design
