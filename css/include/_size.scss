@@ -18,7 +18,8 @@ body {
   height: 200px;
 }
 .pic {
-  height: 360px;
+  height: 50vw;
+  max-height: 360px;
 }
 .card img, .pic img, .text img {
   width: 100%;

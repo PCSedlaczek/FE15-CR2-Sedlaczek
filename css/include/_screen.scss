@@ -6,16 +6,16 @@
   .flex {
     flex-wrap: wrap;
   }
-  .card {
+  .card, .pic {
     flex-basis: 80%;
   }
 }
 
 @media screen and (min-width: 768px) {
   header .navbar {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
-  .card {
+  .card, .pic {
     flex-basis: 45%;
   }
 }
@@ -23,7 +23,7 @@
   header .navbar {
     font-size: 1.2rem;
   }
-  .card {
+  .card, .pic {
     flex-basis: 30%;
   }
 }
